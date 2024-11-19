@@ -1,13 +1,12 @@
-// 2. Check whether a character is a vowel or consonant
-void checkVowelConsonant(String char) {
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
-  if (char.length == 1 && char.toLowerCase().contains(RegExp(r'[a-z]'))) {
-    if (vowels.contains(char.toLowerCase())) {
-      print('$char is a Vowel');
-    } else {
-      print('$char is a Consonant');
-    }
+void main() {
+  String char = 'A'; // Change this value to test different characters
+  char = char.toLowerCase(); // Convert the character to lowercase
+
+  if ('aeiou'.contains(char)) {
+    print('$char is a vowel.');
+  } else if (RegExp(r'[a-z]').hasMatch(char)) {
+    print('$char is a consonant.');
   } else {
-    print('$char is not a valid letter');
+    print('$char is not a valid letter.');
   }
 }
