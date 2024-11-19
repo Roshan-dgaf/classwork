@@ -1,8 +1,9 @@
-// 1. Check if a number is odd or even
-void checkOddEven(int number) {
+void main() {
+  int number = 25; // Change this value to test different numbers
+
   if (number % 2 == 0) {
-    print('$number is Even');
+    print('$number is even.');
   } else {
-    print('$number is Odd');
+    print('$number is odd.');
   }
 }
